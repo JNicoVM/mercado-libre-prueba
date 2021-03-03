@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\detail_activity.xml",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\detail_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\search_activity.xml",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\search_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\holder_item.xml",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\holder_item.xml"
+    }
+]
