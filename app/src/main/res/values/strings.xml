@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mercado-libre-prueba</string>
+    <string name="valor">Nombre</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Nada">Nada</string>
+    <string name="haz_tu_consulta_aqui">Haz tu consulta aqui..</string>
+    <string name="no_se_ha_encontrada_datos">No se ha encontrada datos</string>
+</resources>
