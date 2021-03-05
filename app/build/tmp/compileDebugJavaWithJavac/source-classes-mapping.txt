@@ -39,9 +39,9 @@ com/jnicovm/mercado_libre_prueba/di/DaggerMercadoLibrePruebaComponent.java
  com.jnicovm.mercado_libre_prueba.di.DaggerMercadoLibrePruebaComponent$SearchComponentImpl
 com/jnicovm/mercado_libre_prueba/repository/RepositoryModule_SearchRepositoryProviderFactory.java
  com.jnicovm.mercado_libre_prueba.repository.RepositoryModule_SearchRepositoryProviderFactory
-com/jnicovm/mercado_libre_prueba/databinding/DetailActivityBinding.java
- com.jnicovm.mercado_libre_prueba.databinding.DetailActivityBinding
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
 com/jnicovm/mercado_libre_prueba/useCases/UseCaseModule_PerfomSearchFactory.java
  com.jnicovm.mercado_libre_prueba.useCases.UseCaseModule_PerfomSearchFactory
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/jnicovm/mercado_libre_prueba/databinding/DetailActivityBinding.java
+ com.jnicovm.mercado_libre_prueba.databinding.DetailActivityBinding

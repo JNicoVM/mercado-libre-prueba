@@ -4,6 +4,7 @@ package com.jnicovm.mercado_libre_prueba.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,7 +18,7 @@ import java.lang.String;
 
 public final class DetailActivityBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final ConstraintLayout clItemDescripcion;
@@ -67,7 +68,7 @@ public final class DetailActivityBinding implements ViewBinding {
   @NonNull
   public final View vSeparador1;
 
-  private DetailActivityBinding(@NonNull ConstraintLayout rootView,
+  private DetailActivityBinding(@NonNull LinearLayout rootView,
       @NonNull ConstraintLayout clItemDescripcion, @NonNull AppCompatImageView ivItem,
       @NonNull TextView labelInformacionVendedor, @NonNull TextView labelReputacionVendedor,
       @NonNull TextView labelUbicacioon, @NonNull TextView labelVendedor,
@@ -96,7 +97,7 @@ public final class DetailActivityBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -217,7 +218,7 @@ public final class DetailActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DetailActivityBinding((ConstraintLayout) rootView, clItemDescripcion, ivItem,
+      return new DetailActivityBinding((LinearLayout) rootView, clItemDescripcion, ivItem,
           labelInformacionVendedor, labelReputacionVendedor, labelUbicacioon, labelVendedor,
           tvCondicion, tvDisponibles, tvEnvio, tvNombreItem, tvPrecioItem, tvReputacionVendedor,
           tvUbicacion, tvVendedor, tvVendidos, vSeparador1);

@@ -1180,6 +1180,7 @@ dimen _18sp
 dimen _1dp
 dimen _20sp
 dimen _300dp
+dimen _32dp
 dimen _3dp
 dimen _50dp
 dimen _5dp
@@ -2497,6 +2498,7 @@ string path_password_strike_through
 string reputacion
 string search_menu_title
 string status_bar_notification_info_overflow
+string titulo_detalle
 string ubicacion
 string valor
 string vendido_por

@@ -26,10 +26,10 @@ public final class SearchActivity extends com.jnicovm.mercado_libre_prueba.base.
     private final void initializeUi() {
     }
     
-    private final void loadAdapter(com.jnicovm.mercado_libre_prueba.models.response.SearchResponse searchResponse) {
+    private final void initListeners() {
     }
     
-    private final void initListeners() {
+    private final void loadAdapter(com.jnicovm.mercado_libre_prueba.models.response.SearchResponse searchResponse) {
     }
     
     private final void infoItem(com.jnicovm.mercado_libre_prueba.models.response.ResultsResponse result) {
