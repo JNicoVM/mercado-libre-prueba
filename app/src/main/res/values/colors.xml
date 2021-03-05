@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="black_040404">#000000</color>
     <color name="gris_222222">#222222</color>
+    <color name="black_FF303030">#434343</color>
+    <color name="green_54A805">#54A805</color>
+    <color name="blue_0024C2">#0024C2</color>
+    <color name="blanco_opacidad_90">#E6FFFFFF</color>
+    <color name="gris_8C8C8C">#8C8C8C</color>
 </resources>

@@ -17,10 +17,13 @@ import java.lang.Object;
 
 public abstract class HolderItemBinding extends ViewDataBinding {
   @NonNull
-  public final AppCompatImageView imgLocked;
+  public final AppCompatImageView ivItem;
 
   @NonNull
   public final ConstraintLayout llElegido;
+
+  @NonNull
+  public final AppCompatTextView tvCuotasItem;
 
   @NonNull
   public final AppCompatTextView tvNombreItem;
@@ -28,14 +31,20 @@ public abstract class HolderItemBinding extends ViewDataBinding {
   @NonNull
   public final AppCompatTextView tvPrecioItem;
 
+  @NonNull
+  public final AppCompatTextView tvShipping;
+
   protected HolderItemBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppCompatImageView imgLocked, ConstraintLayout llElegido, AppCompatTextView tvNombreItem,
-      AppCompatTextView tvPrecioItem) {
+      AppCompatImageView ivItem, ConstraintLayout llElegido, AppCompatTextView tvCuotasItem,
+      AppCompatTextView tvNombreItem, AppCompatTextView tvPrecioItem,
+      AppCompatTextView tvShipping) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.imgLocked = imgLocked;
+    this.ivItem = ivItem;
     this.llElegido = llElegido;
+    this.tvCuotasItem = tvCuotasItem;
     this.tvNombreItem = tvNombreItem;
     this.tvPrecioItem = tvPrecioItem;
+    this.tvShipping = tvShipping;
   }
 
   @NonNull

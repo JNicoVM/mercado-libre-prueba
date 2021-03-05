@@ -5,4 +5,8 @@
     <string name="Nada">Nada</string>
     <string name="haz_tu_consulta_aqui">Haz tu consulta aqui..</string>
     <string name="no_se_ha_encontrada_datos">No se ha encontrada datos</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="reputacion">Reputación</string>
+    <string name="vendido_por">Vendido por:</string>
+    <string name="información_vendedor">Información del vendedor</string>
 </resources>

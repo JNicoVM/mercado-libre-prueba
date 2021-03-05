@@ -9,7 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.jnicovm.mercado_libre_prueba.R;
@@ -25,6 +27,9 @@ public final class SearchActivityBinding implements ViewBinding {
   public final ImageButton btnBuscar;
 
   @NonNull
+  public final ContentLoadingProgressBar contentLoadingProgressBar;
+
+  @NonNull
   public final AppCompatEditText etSearch;
 
   @NonNull
@@ -33,14 +38,20 @@ public final class SearchActivityBinding implements ViewBinding {
   @NonNull
   public final RecyclerView rvItems;
 
+  @NonNull
+  public final AppCompatSpinner spinnerFiltro;
+
   private SearchActivityBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton btnBuscar,
-      @NonNull AppCompatEditText etSearch, @NonNull TextView noData,
-      @NonNull RecyclerView rvItems) {
+      @NonNull ContentLoadingProgressBar contentLoadingProgressBar,
+      @NonNull AppCompatEditText etSearch, @NonNull TextView noData, @NonNull RecyclerView rvItems,
+      @NonNull AppCompatSpinner spinnerFiltro) {
     this.rootView = rootView;
     this.btnBuscar = btnBuscar;
+    this.contentLoadingProgressBar = contentLoadingProgressBar;
     this.etSearch = etSearch;
     this.noData = noData;
     this.rvItems = rvItems;
+    this.spinnerFiltro = spinnerFiltro;
   }
 
   @Override
@@ -76,6 +87,12 @@ public final class SearchActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.contentLoadingProgressBar;
+      ContentLoadingProgressBar contentLoadingProgressBar = rootView.findViewById(id);
+      if (contentLoadingProgressBar == null) {
+        break missingId;
+      }
+
       id = R.id.etSearch;
       AppCompatEditText etSearch = rootView.findViewById(id);
       if (etSearch == null) {
@@ -94,8 +111,14 @@ public final class SearchActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SearchActivityBinding((ConstraintLayout) rootView, btnBuscar, etSearch, noData,
-          rvItems);
+      id = R.id.spinnerFiltro;
+      AppCompatSpinner spinnerFiltro = rootView.findViewById(id);
+      if (spinnerFiltro == null) {
+        break missingId;
+      }
+
+      return new SearchActivityBinding((ConstraintLayout) rootView, btnBuscar,
+          contentLoadingProgressBar, etSearch, noData, rvItems, spinnerFiltro);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
