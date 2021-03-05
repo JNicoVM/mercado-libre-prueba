@@ -4,9 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class InstallmentsResponse(
     @SerializedName("quantity")
-    val quantity: Int,
+    val quantity: Double,
     @SerializedName("amount")
-    val amount: Int,
-    @SerializedName("rate")
-    val rate: Int
+    val amount: Double
 )

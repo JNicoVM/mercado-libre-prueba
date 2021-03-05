@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filtro">
+        <item>sin Flitro</item>
+        <item>Por Categoria</item>
+        <item>Por Nickname</item>
+        <item>Por Vendedor</item>
+    </string-array>
+</resources>

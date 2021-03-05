@@ -6,18 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".activities.searchActivities.SearchActivity">
 
-
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerFiltro"
+        style="@style/Widget.AppCompat.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:background="@drawable/spinner_bg"
+        android:dropDownWidth="@dimen/_300dp"
+        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+        android:paddingEnd="@dimen/_14dp"
+        android:paddingStart="@dimen/_10dp"
+        android:popupBackground="@android:color/white"
+        android:popupElevation="@dimen/_3dp"
+        android:stateListAnimator="@animator/spinner_sla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etSearch"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/_0dp"
         android:layout_height="@dimen/_50dp"
-        android:drawablePadding="32dp"
+        android:drawablePadding="@dimen/_32dp"
         android:hint="@string/haz_tu_consulta_aqui"
+        android:layout_marginStart="@dimen/_8dp"
         android:singleLine="true"
         app:layout_constraintEnd_toStartOf="@id/btn_buscar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rvItems"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/rvItems"
+        app:layout_constraintTop_toBottomOf="@id/spinnerFiltro" />
 
     <ImageButton
         android:id="@+id/btn_buscar"
@@ -25,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/etSearch"
         android:contentDescription="@null"
+        android:layout_marginEnd="@dimen/_8dp"
         android:src="@drawable/ic_search"
         app:layout_constraintBottom_toBottomOf="@id/etSearch"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +56,6 @@
         android:id="@+id/rvItems"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_0dp"
-        android:layout_alignParentBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etSearch" />
@@ -49,6 +70,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etSearch" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/contentLoadingProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:attr/progressBarStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        android:background="@color/blanco_opacidad_90"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/dimens_140dp"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

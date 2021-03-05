@@ -1,11 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\animator_spinner_sla.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\animator\\spinner_sla.xml"
     },
     {
         "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\layout_holder_item.xml.flat",
@@ -16,36 +12,28 @@
         "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\search_activity.xml"
     },
     {
-        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_location.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\drawable\\ic_location.xml"
     },
     {
         "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinner_bg.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\drawable\\spinner_bg.xml"
     },
     {
         "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search.xml.flat",
         "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\drawable\\ic_search.xml"
     },
     {
-        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\drawable_layour_border.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\drawable\\layour_border.xml"
     },
     {
         "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
@@ -60,15 +48,55 @@
         "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_dropdown.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\spinner_dropdown.xml"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_selected.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\spinner_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_down.xml.flat",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\drawable\\ic_arrow_down.xml"
     }
 ]

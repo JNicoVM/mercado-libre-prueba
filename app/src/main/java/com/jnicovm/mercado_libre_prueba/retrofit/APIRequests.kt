@@ -19,7 +19,6 @@ import java.util.concurrent.TimeUnit
 abstract class BaseRequest<T: Any>(
     baseUrl: String
 ) {
-
     private val interceptor= HttpLoggingInterceptor()
         .setLevel(HttpLoggingInterceptor.Level.BODY)
 

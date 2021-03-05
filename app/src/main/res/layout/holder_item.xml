@@ -18,14 +18,15 @@
             android:layout_marginBottom="@dimen/_8dp">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imgLocked"
+                android:id="@+id/ivItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_13dp"
-                android:layout_marginTop="@dimen/_15dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvNombreItem"
                 tools:ignore="ContentDescription" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -35,11 +36,11 @@
                 android:layout_marginStart="@dimen/_5dp"
                 android:layout_marginEnd="@dimen/_10dp"
                 android:text="@string/Nombre"
-                android:textColor="@color/black_040404"
-                android:textSize="@dimen/_14sp"
+                android:textColor="@color/black_FF303030"
+                android:textSize="@dimen/_16sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imgLocked"
-                app:layout_constraintTop_toTopOf="@id/imgLocked"
+                app:layout_constraintStart_toEndOf="@id/ivItem"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_goneMarginStart="@dimen/_10dp" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -50,11 +51,36 @@
                 android:layout_marginEnd="@dimen/_10dp"
                 android:text="@string/Nada"
                 android:textColor="@color/gris_222222"
-                android:textSize="@dimen/_12sp"
+                android:textSize="@dimen/_18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/tvNombreItem"
                 app:layout_constraintTop_toBottomOf="@+id/tvNombreItem" />
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCuotasItem"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:text="@string/Nada"
+                android:textColor="@color/gris_222222"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvPrecioItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrecioItem" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShipping"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:text="@string/Nada"
+                android:textColor="@color/green_54A805"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvCuotasItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvCuotasItem" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -14,8 +14,18 @@ data class ResultsResponse(
     @SerializedName("price")
     val price: Double,
     @SerializedName("available_quantity")
-    val available_quantity: Int,
+    val availableQuantity: Int,
     @SerializedName("thumbnail")
-    val thumbnail: String
+    val thumbnail: String,
+    @SerializedName("installments")
+    val installments: InstallmentsResponse,
+    @SerializedName("shipping")
+    val shipping: ShippingResponse,
+    @SerializedName("condition")
+    val condition: String,
+    @SerializedName("sold_quantity")
+    val soldQuantity: Double,
+    @SerializedName("address")
+    val address: AddressResponse
 
 )

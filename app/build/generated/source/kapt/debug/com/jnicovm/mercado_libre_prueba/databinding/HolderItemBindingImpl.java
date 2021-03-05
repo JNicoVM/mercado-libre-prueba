@@ -15,9 +15,11 @@ public class HolderItemBindingImpl extends HolderItemBinding  {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.ll_elegido, 1);
-        sViewsWithIds.put(R.id.imgLocked, 2);
+        sViewsWithIds.put(R.id.ivItem, 2);
         sViewsWithIds.put(R.id.tvNombreItem, 3);
         sViewsWithIds.put(R.id.tvPrecioItem, 4);
+        sViewsWithIds.put(R.id.tvCuotasItem, 5);
+        sViewsWithIds.put(R.id.tvShipping, 6);
     }
     // views
     @NonNull
@@ -28,14 +30,16 @@ public class HolderItemBindingImpl extends HolderItemBinding  {
     // Inverse Binding Event Handlers
 
     public HolderItemBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private HolderItemBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (androidx.appcompat.widget.AppCompatImageView) bindings[2]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[6]
             );
         this.mboundView0 = (androidx.cardview.widget.CardView) bindings[0];
         this.mboundView0.setTag(null);

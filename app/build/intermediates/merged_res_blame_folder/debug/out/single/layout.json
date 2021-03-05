@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\spinner_dropdown.xml",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\spinner_dropdown.xml"
+    },
+    {
         "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\detail_activity.xml",
         "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\detail_activity.xml"
     },
@@ -10,5 +14,9 @@
     {
         "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\holder_item.xml",
         "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\holder_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\spinner_selected.xml",
+        "source": "C:\\Users\\yrojas\\AndroidStudioProjects\\mercadolibreprueba\\app\\src\\main\\res\\layout\\spinner_selected.xml"
     }
 ]
