@@ -20,16 +20,19 @@ import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 import java.util.HashMap
 
+//Origen de datos remotos
 class SearchRetrofitDataSource(
         private val requestSearch: RequestSearch
 ) : RemoteSearchDataSource {
 
+    //configuracion RX
     fun configuracionRx(jsonObjectObservable: Observable<JsonObject>): Observable<JsonObject>
             =jsonObjectObservable.subscribeOn(Schedulers.newThread())
             .subscribeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.io())
             .onErrorReturn(this::obtenerError)
 
+    //Configuracion de respuesta de error
     private fun obtenerError(throwable: Throwable): JsonObject {
         val error="${throwable.message} Class: ${throwable.javaClass.name}"
         Log.e("Api Error",error,throwable)
@@ -46,12 +49,15 @@ class SearchRetrofitDataSource(
         return jsonObject
     }
 
+    // se sobreescribe la funcion de RemoteSearchDataSource para retornar el jsonobject correspondiente
     override fun perfomSearch(searchRequest: SearchRequest): Observable<JsonObject> {
+        // Esta logica la cree para que se pudiera llamar a un endpoint con un query diferente
         val map: HashMap<String, String> = HashMap()
         map[MAP_ITEM] = searchRequest.item
         map[MAP_FILTRO] = searchRequest.resource
         Log.d("D_filtro", map[MAP_FILTRO] as String)
         Log.d("D_item", map[MAP_ITEM] as String)
+        //Segun el filtro que se escoja se lanzara el servicio que consulte con la palabra clave de cada filtro
         when(map[MAP_FILTRO] as String){
             VAL_QUERY -> return configuracionRx(requestSearch.interfazApi
                 .doSearchQuery(map[MAP_ITEM] as String))

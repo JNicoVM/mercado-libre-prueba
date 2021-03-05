@@ -5,9 +5,9 @@ import androidx.lifecycle.MutableLiveData
 import com.jnicovm.mercado_libre_prueba.models.request.SearchRequest
 
 class SearchDao {
+    //El viewmodel hace uso del DAO para almacenar las variables entorno al Livedata
     private var resource = MutableLiveData<String>()
     private var item = MutableLiveData<String>()
-
 
     fun getResource() = resource as LiveData<String>
 

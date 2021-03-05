@@ -11,22 +11,25 @@ import com.google.gson.Gson
 import com.jnicovm.mercado_libre_prueba.R
 import com.jnicovm.mercado_libre_prueba.base.BaseActivity
 import com.jnicovm.mercado_libre_prueba.databinding.DetailActivityBinding
+import com.jnicovm.mercado_libre_prueba.extensions.APPConstants.INTENT_RESULT
 import com.jnicovm.mercado_libre_prueba.models.response.ResultsResponse
 import com.squareup.picasso.Picasso
 import java.text.DecimalFormat
 
 class DetailActivity: BaseActivity() {
 
+    // Llamado generico de la actividad
     companion object {
         fun startActivity(context: Context, resultResponse: ResultsResponse) {
             val intent = Intent(
                 context,
                 DetailActivity::class.java
-            ).putExtra("result", Gson().toJson(resultResponse))
+            ).putExtra(INTENT_RESULT, Gson().toJson(resultResponse)) // se envia un intent con la información del item
             context.startActivity(intent)
         }
     }
 
+    // late init del binding
     private lateinit var binding: DetailActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,20 +46,26 @@ class DetailActivity: BaseActivity() {
         return true
     }
 
+    //Se inicializa los atributos del appbar y se habilita el back button
     private fun appBarEvents(){
         val actionbar = supportActionBar
-        actionbar?.title = "Detalle"
+        actionbar?.title = resources.getString(R.string.titulo_detalle)
         actionbar?.setDisplayHomeAsUpEnabled(true)
         actionbar?.setDisplayHomeAsUpEnabled(true)
     }
 
     @SuppressLint("SetTextI18n")
     private fun initializeUi(){
-       val item = Gson().fromJson(intent.getStringExtra("result"), ResultsResponse::class.java)
+        // se recibe en la variable local la informacion del item como objeto
+       val item = Gson().fromJson(intent.getStringExtra(INTENT_RESULT), ResultsResponse::class.java)
+
+        //Se uso picasso para cargar la imagenes
         Picasso.get()
             .load(item.thumbnail)
             .resize(250,250)
             .into(this.binding.ivItem)
+
+        //Usando el binding se setea toda la informacion del item
         binding.tvCondicion.text = item.condition
         binding.tvVendidos.text = "${DecimalFormat("##.##").format(item.soldQuantity)} vendidos"
         binding.tvNombreItem.text = item.title

@@ -4,8 +4,9 @@ import com.jnicovm.mercado_libre_prueba.dao.SearchDao
 import com.jnicovm.mercado_libre_prueba.data.RemoteSearchDataSource
 import com.jnicovm.mercado_libre_prueba.models.request.SearchRequest
 
-class SearchRepository (private val remoteSearchDataSource: RemoteSearchDataSource,
-                        private val searchDao: SearchDao
+// el repositorio se comunica directamente con las fuentes de datos
+class SearchRepository (private val remoteSearchDataSource: RemoteSearchDataSource, //fuente de datos remota
+                        private val searchDao: SearchDao // fuente de datos local (no room pero se pueda usar configurar en un futuro para eso)
 ) {
 
     fun getResource() = searchDao.getResource()

@@ -1,4 +1,6 @@
 <resources>
+
+    // APP GENERAL
     <string name="app_name">mercado-libre-prueba</string>
     <string name="valor">Nombre</string>
     <string name="Nombre">Nombre</string>
@@ -9,4 +11,7 @@
     <string name="reputacion">Reputación</string>
     <string name="vendido_por">Vendido por:</string>
     <string name="información_vendedor">Información del vendedor</string>
+
+    // DETAILS ACTIVITY
+    <string name="titulo_detalle">Detalle</string>
 </resources>

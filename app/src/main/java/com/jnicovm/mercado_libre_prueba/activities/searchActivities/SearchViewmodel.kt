@@ -10,6 +10,7 @@ import com.jnicovm.mercado_libre_prueba.useCases.GetSearchUsesCases
 import io.reactivex.disposables.CompositeDisposable
 import java.lang.Exception
 
+// Viewmodel recive como parametro un UseCase el cual es inyectado
 class SearchViewmodel (private val getSearchUsesCases: GetSearchUsesCases): ViewModel(){
 
     fun getResource() = getSearchUsesCases.getResource()
@@ -24,13 +25,16 @@ class SearchViewmodel (private val getSearchUsesCases: GetSearchUsesCases): View
 
     private val disposable = CompositeDisposable()
 
+    // Se crean la variable livedata y mutablelivedata para que la información persista con el ciclo de vida de la aplicación
     private val _searchValues: MutableLiveData<SearchResponse> = MutableLiveData()
     val searchValues: LiveData<SearchResponse> get() = _searchValues
 
+    //funcion para llamar al servicio de busqueda dentro del caso de uso
     fun perfomSearch() {
         disposable.add(
             getSearchUsesCases.invoke().subscribe {
                 try {
+                    // parseando json de respuesta a SearchRespone
                     _searchValues.postValue(Gson().fromJson(it.toString(), SearchResponse::class.java))
                 }catch (error: Exception){
                     Log.e("EPar", error.toString())
@@ -38,5 +42,11 @@ class SearchViewmodel (private val getSearchUsesCases: GetSearchUsesCases): View
 
             }
         )
+    }
+
+    // limpiando los hilos del servicio
+    override fun onCleared() {
+        super.onCleared()
+        disposable.clear()
     }
 }

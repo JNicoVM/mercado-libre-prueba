@@ -7,6 +7,7 @@ import com.jnicovm.mercado_libre_prueba.di.MercadoLibrePruebaComponent
 
 class MyApplication: Application() {
 
+    //Inyeccion
     lateinit var component : MercadoLibrePruebaComponent
         private set
 
@@ -14,7 +15,6 @@ class MyApplication: Application() {
         super.onCreate()
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
-
         component = initAppComponent()
     }
 

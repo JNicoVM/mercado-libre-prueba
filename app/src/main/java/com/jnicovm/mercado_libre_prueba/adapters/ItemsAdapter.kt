@@ -14,8 +14,11 @@ import com.squareup.picasso.Picasso
 
 class ItemsAdapter : RecyclerView.Adapter<ItemsAdapter.ItemsViewHolder>() {
 
+    //Lista de items que va a usar el adaptador
     private var itemsList = listOf<ResultsResponse>()
-    private lateinit var callbackClickItem : CallbackT<ResultsResponse>
+
+    //Callback para ejecutar el evento en la actividad que instancio al adaptador
+    private lateinit var callbackClickItem : CallbackT<ResultsResponse> // callback generico <T>
 
     class ItemsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var binding: HolderItemBinding =
@@ -32,22 +35,24 @@ class ItemsAdapter : RecyclerView.Adapter<ItemsAdapter.ItemsViewHolder>() {
         val item = itemsList[position]
         initUi(holder, item)
         initListeners(holder, item)
-
     }
 
     override fun getItemCount(): Int = itemsList.size
 
+    //Funcion para actualizar la informacion del adaptador y instaciarlo solo una vez
     fun updateItem(items: ArrayList<ResultsResponse>){
         this.itemsList = items
         notifyDataSetChanged()
     }
 
+    // inicializacion del callback
     fun onUserClicked(
         callbackClickItem:  CallbackT<ResultsResponse>
     ) {
         this.callbackClickItem = callbackClickItem
     }
 
+    //LLenar la informacion de la vista segun el item
     @SuppressLint("SetTextI18n")
     private fun initUi(holder: ItemsViewHolder, item: ResultsResponse){
         holder.binding.tvNombreItem.text = item.title
@@ -60,12 +65,14 @@ class ItemsAdapter : RecyclerView.Adapter<ItemsAdapter.ItemsViewHolder>() {
             .into(holder.binding.ivItem)
     }
 
+    //Inicializar los listeners
     private fun initListeners(holder: ItemsViewHolder, item: ResultsResponse){
         holder.binding.llElegido.setOnClickListener {
             callbackClickItem(item)
         }
     }
 
+    //Funcion que revisa si el item tiene la opcion de cuotas, si es null oculta el campo y sus respectivos pixeles
     private fun checkInstallments(holder: ItemsViewHolder, installments: InstallmentsResponse): String{
         return if(installments == null){
             holder.binding.tvCuotasItem.visibility = View.GONE
@@ -75,6 +82,7 @@ class ItemsAdapter : RecyclerView.Adapter<ItemsAdapter.ItemsViewHolder>() {
         }
     }
 
+    //Funcion que revisa si el item cuanta con envio gratuito
     private fun checkFreeShipping(holder: ItemsViewHolder,freeShipping: Boolean): String{
         return if(freeShipping){
             "Envio gratis"
